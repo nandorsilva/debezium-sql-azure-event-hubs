@@ -8,7 +8,7 @@
        "database.port":"1433",
        "database.user":"sa",
        "database.password":"Password!",
-       "database.dbname":"dbecommerce",
+       "database.dbname":"dbEcommerce",
        "snapshot.mode":"initial_schema_only",
        "database.history":"io.debezium.relational.history.MemoryDatabaseHistory"
     }
