@@ -91,7 +91,7 @@ cat sql/init.sql | docker exec -i debezium-sql-azure-event-hubs_sqlserver_1 bash
 ### Criando o conector
 
 ```shell
-curl -i -X POST -H "Accept:application/json" -H  "Content-Type:application/json" http://localhost:8083/connectors/ -d @register-debezium.json
+curl -i -X POST -H "Accept:application/json" -H  "Content-Type:application/json" http://localhost:8083/connectors/ -d @debezium/register-debezium.json
 ```
 
 Após a criação do conector vamos criar um registro no banco de dados e ver o tópico sendo criado no event-bus
