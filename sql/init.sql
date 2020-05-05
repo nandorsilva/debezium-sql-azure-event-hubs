@@ -13,6 +13,6 @@ CREATE TABLE produtos (
 INSERT INTO produtos(nome,descricao)  VALUES ('Lapis','lapis de escrever');
 INSERT INTO produtos(nome,descricao)  VALUES ('Borracha','borracha muito boa');
 INSERT INTO produtos(nome,descricao)  VALUES ('Celular','celular hawaui');
-INSERT INTO produtos(nome,descricao)  VALUES ('TV','50 polegadas''s hammer');
+INSERT INTO produtos(nome,descricao)  VALUES ('TV','50 polegadas');
 EXEC sys.sp_cdc_enable_table @source_schema = 'dbo', @source_name = 'produtos', @role_name = NULL, @supports_net_changes = 0;
 GO
