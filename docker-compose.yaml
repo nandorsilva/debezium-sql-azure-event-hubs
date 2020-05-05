@@ -1,7 +1,7 @@
 version: '2'
 services:    
   sqlserver:
-    image: microsoft/mssql-server-linux
+    image: microsoft/mssql-server-linux:2017-CU9-GDR2
     ports:
      - 1433:1433
     environment:
@@ -16,7 +16,7 @@ services:
     links:
      
      - sqlserver
-     environment:
+    environment:
      - BOOTSTRAP_SERVERS=${EH_NAME}.servicebus.windows.net:9093
      - GROUP_ID=1
      - CONFIG_STORAGE_TOPIC=debezium_configs

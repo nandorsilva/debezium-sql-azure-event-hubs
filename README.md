@@ -72,3 +72,23 @@ Se tudo estiver dado certo até aqui, veremos os containers abaixo:
 ```shell
 docker container ls
 ```
+
+### Sql Server
+
+Para esse tutorial estou utilizando a imagem sql server da Microsoft `microsoft/mssql-server-linux`
+
+Para criar a estrutura dos dados esou utilizando o proprio container criado.
+```shell
+cat sql/init.sql | docker exec -i debezium-sql-azure-event-hubs_sqlserver_1 bash -c '/opt/mssql-tools/bin/sqlcmd -U sa -P $SA_PASSWORD'
+```
+
+### Criando o conector
+```shell
+curl -i -X POST -H "Accept:application/json" -H  "Content-Type:application/json" http://localhost:8083/connectors/ -d @register-debezium.json
+```
+
+Após a criação do conector vamos criar um registro no banco de dados e ver o tópico sendo criado no event-bus
+
+```shell
+INSERT INTO produtos(nome,descricao)  VALUES ('Celular','Celular novo);
+```
