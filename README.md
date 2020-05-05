@@ -30,8 +30,8 @@ O Docker Compose utilizara as variáveis de ambiente abaixo:
 
 ```bash
 export DEBEZIUM_VERSION=1.1
-export EH_NAME=event
-export EH_CONNECTION_STRING=
+export EH_NAME=pocevento
+export EH_CONNECTION_STRING="Endpoint=sb://pocevento.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=hXWVP8Bbmx1g3hJH2SYlazVF6wlIfR2dm1oy4t/+V+Y="
 ```
 > Os dados das variáveis EH_NAME e EH_CONNECTION_STRING estão no hub de eventos:
 
