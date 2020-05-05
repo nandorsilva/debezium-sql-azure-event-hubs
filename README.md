@@ -72,6 +72,8 @@ Se tudo estiver dado certo até aqui, veremos os containers abaixo:
 ```shell
 docker container ls
 ```
+![](https://raw.githubusercontent.com/nandorsilva/debezium-sql-azure-event-hubs/master/doc/event-bus-6.png)
+
 
 ### Sql Server
 
