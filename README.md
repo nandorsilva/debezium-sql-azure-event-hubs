@@ -92,3 +92,6 @@ Após a criação do conector vamos criar um registro no banco de dados e ver o 
 ```shell
 INSERT INTO produtos(nome,descricao)  VALUES ('Celular','Celular novo);
 ```
+![](https://raw.githubusercontent.com/nandorsilva/debezium-sql-azure-event-hubs/master/doc/event-bus-5.png)
+
+
