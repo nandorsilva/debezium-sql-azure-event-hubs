@@ -96,4 +96,6 @@ INSERT INTO produtos(nome,descricao)  VALUES ('Celular','Celular novo);
 ```
 ![](https://raw.githubusercontent.com/nandorsilva/debezium-sql-azure-event-hubs/master/doc/event-bus-5.png)
 
+[Para mais informações sobre debezium](https://debezium.io/)
+
 
