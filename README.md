@@ -97,7 +97,7 @@ curl -i -X POST -H "Accept:application/json" -H  "Content-Type:application/json"
 Após a criação do conector vamos criar um registro no banco de dados e ver o tópico sendo criado no event-bus
 
 ```shell
-INSERT INTO produtos(nome,descricao)  VALUES ('Celular','Celular novo);
+INSERT INTO produtos(nome,descricao)  VALUES ('Celular','Celular novo');
 ```
 
 ![](https://raw.githubusercontent.com/nandorsilva/debezium-sql-azure-event-hubs/master/doc/event-bus-5.png)
